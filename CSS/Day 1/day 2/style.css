@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+:root{
+    --black-clr:#000;
+    --white-clr:#fff;
+    --dark-green:#224717;
+    --light-green:#7fff57;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+main{
+    background: var(--black-clr);
+}
+
+.left-side,
+.right-side{
+    width: 50%;
+    height: 100vh;
+}
+
+.left-side{
+  padding-inline: 2rem;
+}
+
+.right-side{
+
+    padding: 1rem 1rem 1rem 0;
+}
+
+.right-inner{
+    background: linear-gradient(
+        var(--dark-green),
+        var(--light-green)
+    );
+    height: 100%;
+    border-radius: 5rem 0 0 5rem;
+    position: relative;
+   }
+   .right-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--black-clr);
+    clip-path: circle(150px at left);
+
+   }
+
+.navbar{
+    height: 13vh;
+    justify-content: space-between;
+   
+}
+
+.navlist{
+    gap: 3rem;
+
+}
+.link{
+    color: var(--white-clr);
+    font-size: .95rem;
+}
+
+.logo{
+    background: var(--light-green);
+    font-size: 2.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-family: "Bebas Neue", serif;
+    color: var(--black-clr);
+}
+
+.hero{
+    height: calc(100vh - 13vh);
+  
+    padding: 3rem;
+}
+
+
+span{
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    color: var(--white-clr);
+    text-transform: uppercase;
+}
+
+
+h1{
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    color: var(--light-green);
+    font-family: "Bebas Neue", serif;
+    margin-top: .7rem;
+}
+
+p{
+    font-size: .95rem;
+    line-height: 1.6rem;
+    color: var(--white-clr);
+    opacity: .4;
+    min-width: 550px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+button{
+    font-size: 1rem;
+    color: var(--black-clr);
+    background: var(--light-green);
+    border: .1rem solid var(--light-green);
+    padding: .7rem 2rem;
+    transition: .5s ease-in-out;
+}
+
+button:hover{
+    background: transparent;
+    color: var(--dark-green);
+}
