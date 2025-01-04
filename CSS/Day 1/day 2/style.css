@@ -94,14 +94,17 @@ main{
 .logo,
 .icon{
     background: var(--light-green);
-    font-size: 2.5rem;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
-    font-family: "Bebas Neue", serif;
+  
     color: var(--black-clr);
+}
+.logo{
+    font-size: 2.5rem;
+    font-family: "Bebas Neue", serif;
 }
 
 .hero{
@@ -150,3 +153,32 @@ button:hover{
     background: transparent;
     color: var(--dark-green);
 }
+
+.social-icons{
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -3%;
+   
+}
+
+
+.icon{
+    font-size: 1.2rem;
+    transition: .3s ease-in-out;
+}
+
+.icon:hover{
+transform: translateX(-30%);
+box-shadow: 0 0 2rem var(--light-green);
+
+}
+
+
+
+
+
+
+
