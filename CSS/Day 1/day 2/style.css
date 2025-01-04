@@ -47,6 +47,16 @@ main{
 
     padding: 1rem 1rem 1rem 0;
 }
+.profile-image{
+    height: 42vw;
+   }
+
+.profile-image img{
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .right-inner{
     background: linear-gradient(
         var(--dark-green),
@@ -81,7 +91,8 @@ main{
     font-size: .95rem;
 }
 
-.logo{
+.logo,
+.icon{
     background: var(--light-green);
     font-size: 2.5rem;
     width: 40px;
