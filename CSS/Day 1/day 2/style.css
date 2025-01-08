@@ -181,4 +181,54 @@ box-shadow: 0 0 2rem var(--light-green);
 
 
 
+@media screen and (max-width: 700px){
+    .coloumn{
+        flex-direction: column;
+    }
 
+    .left-side,
+    .right-side{
+        width: 95%;
+        height: 60vh;
+    }
+    .right-side{
+        padding: 0;
+    }
+    .navlist{
+        gap: 2rem;
+    }
+    .link{
+        font-size: .9rem;
+    }
+    .hero{
+        padding-left: 0;
+        height: auto;
+        padding-top: 3rem;
+    }
+    h1{
+        font-size: 10vw;
+    }
+    span{
+        font-size: 1.1rem;
+    }
+
+    .right-inner{
+        border-radius: 2rem 2rem 0 0;
+    }
+
+    .right-inner::before{
+        clip-path: circle(150px at top);
+    }
+
+    .social-icons{
+        flex-direction: row;
+        top: -2%;
+        left: 50%;
+        transform: translateX(-100%);
+    }
+    .profile-image{
+        height: 95vw;
+    }
+     
+}
+   
