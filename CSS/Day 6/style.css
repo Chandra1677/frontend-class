@@ -204,10 +204,10 @@ span{
         content: "Web Designer";
     }
     61%, 80%{
-        content: "Youtuber";
+        content: "Student";
     }
     81%, 100%{
-        content: "Script Writer";
+        content: "Coding Writer";
     }
 }
 @media (max-width: 1000px){
