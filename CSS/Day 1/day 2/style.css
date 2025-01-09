@@ -188,8 +188,8 @@ box-shadow: 0 0 2rem var(--light-green);
 
     .left-side,
     .right-side{
-        width: 95%;
-        height: 60vh;
+        width: 100%;
+        height: 70vh;
     }
     .right-side{
         padding: 0;
